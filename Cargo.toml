@@ -1,0 +1,21 @@
+[package]
+name = "smart_contracts_with_inc"
+version = "0.1.0"
+authors = ["tunim73 <antonio.netto973@gmail.com>"]
+edition = "2021"
+
+[dependencies]
+ink = { version = "5.0.0", default-features = false }
+
+
+
+[lib]
+path = "src/lib.rs"
+
+[features]
+default = ["std"]
+std = [
+    "ink/std",
+]
+
+ink-as-dependency = []
